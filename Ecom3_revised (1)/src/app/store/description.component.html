@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f6eaea; /* Light gray background */
+        }
+
+        .card {
+            max-width: 900px;
+            background: #edecec;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(250, 248, 248, 0.1);
+        }
+
+        .card-header {
+            background: #076edc; /* Pleasant blue background for the heading */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        strong {
+            font-size: 24px;
+            display: block;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h2>Product Details</h2>
+        </div>
+        <div class="card-body">
+            <h2>Product Name: {{ product.name }}</h2>
+
+            <h2>Product Details:  {{ product.description }}</h2>
+        
+            <h2>Product Price: ${{ product.price }}</h2>
+        
+        </div>
+    </div>
+</body>
+</html>

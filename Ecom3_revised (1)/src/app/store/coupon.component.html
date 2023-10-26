@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale Coupon</title>
+    <style>
+        /* Coupon Styles */
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .coupon {
+            position: relative;
+            width: 300px;
+            padding: 20px;
+            background-color: rgb(242, 234, 188);
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Coupon Button Style */
+        .coupon-button {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .coupon-close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            border:none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="coupon">
+        <button class ="coupon-close" (click)="redirectToSummerSaleTemplate()" routerLink='/store'>❌</button>
+        <h1>Summer Sale Coupon</h1>
+        <p>Use code <strong>SUMMERSALE10</strong> for 10% off your purchase!</p>
+        <button class="coupon-button" (click)="applyCoupon();" routerLink='/store'  >SUMMERSALE10</button>
+    </div>
+
+</body>
+</html>
